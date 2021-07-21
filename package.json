@@ -1,0 +1,14 @@
+{
+  "name": "facebook",
+  "version": "1.0.0",
+  "description": "Practice Projects Like Facebook",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss style.css -w"
+  },
+  "author": "AH Aashiq",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
