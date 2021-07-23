@@ -4,7 +4,6 @@
      padding:13px 5%;
 
      .left-sidebar{
-          // background:#cbdffa;
           flex-basis: 25%;
           position:sticky;
           top:70px;
@@ -12,6 +11,7 @@
           
           .imp-links{
                border-bottom: 1px solid #ccc;
+
                /*----DRY PLX---*/
                a{
                     text-decoration: none;
@@ -127,34 +127,6 @@
                padding:20px;
                color:$color-grey;
 
-
-               .user-profile{
-                    display: flex;
-                    align-items:center;
-
-                    img{
-                         width:45px;
-                         border-radius:50%;
-                         margin-right:10px;
-
-                    }
-                    p{
-                         font-weight: 500;
-                         margin-bottom:-5px;
-                         color:$color-grey;
-
-                    }
-                    small{
-                         font-size: 12px;
-                    }
-
-
-                    i{
-                         margin-left: 3px;
-                    }
-
-               }
-
                .post-input-container{
                     padding-left:55px;
                     padding-top:20px;
@@ -167,9 +139,112 @@
                          background:transparent;
                          resize:none; 
                     }
+                    .add-post-links{
+                         display:flex;
+                         margin-top:10px;
+
+                         a{
+                              text-decoration: none;
+                              display: flex;
+                              align-items:center;
+                              color:$color-blue-light;
+                              margin-right:30px;
+                              font-size: 13px;
+
+                              img{
+                                   width:20px;
+                                   margin-right:10px;
+                              }
+
+                         }  
+                    }
                }
           }
 
+          .user-profile{
+               display: flex;
+               align-items:center;
+
+               img{
+                    width:45px;
+                    border-radius:50%;
+                    margin-right:10px;
+
+               }
+               .name-text{
+                    font-weight: 500;
+                    // margin-bottom:-5px;
+                    color:$color-grey;
+
+               }
+               small{
+                    font-size: 12px;
+               }
+
+
+               i{
+                    margin-left: 3px;
+               }
+               span{
+                   font-size:13px;
+                   color:#9a9a9a;
+               }
+          }
+
+          .post-container {
+               width:100%;
+               background: #fff;
+               border-radius:6px;
+               padding:20px;
+               color: $color-grey;
+               margin:20px 0;
+
+               .post-text{
+                    color:#9a9a9a;
+                    margin:12px 0;
+                    font-size:15px;
+               }
+
+               .post-img{
+                    width: 100%;
+                    border-radius:4px;
+                    margin-bottom: 5px;
+               }
+
+               .post-row{
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-between;
+
+                    .activity-icons{
+                         // cursor:pointer;
+                         div{
+                              display:inline-flex;
+                              align-items:center;
+                              margin-right:30px;
+                              img{
+                                   width:18px;
+                                   margin-right:10px;
+                              }
+                         }
+                    }
+                    .post-profile-icon{
+                         display:flex;
+                         align-items:center;
+                         // cursor: pointer;
+                         img{
+                              width:20px;
+                              border-radius:50%;
+                              margin-right:5px;
+                         }
+                    }
+
+                    a{
+                         text-decoration: none;
+                         color:#9a9a9a;
+                    }
+               }
+          }
      }
 
      .right-sidebar{
@@ -268,7 +343,6 @@
           }  
      }
 }
-
 
 
 

@@ -166,21 +166,6 @@ body {
       border-radius: 6px;
       padding: 20px;
       color: #626262; }
-      .container .main-content .write-post-container .user-profile {
-        display: flex;
-        align-items: center; }
-        .container .main-content .write-post-container .user-profile img {
-          width: 45px;
-          border-radius: 50%;
-          margin-right: 10px; }
-        .container .main-content .write-post-container .user-profile p {
-          font-weight: 500;
-          margin-bottom: -5px;
-          color: #626262; }
-        .container .main-content .write-post-container .user-profile small {
-          font-size: 12px; }
-        .container .main-content .write-post-container .user-profile i {
-          margin-left: 3px; }
       .container .main-content .write-post-container .post-input-container {
         padding-left: 55px;
         padding-top: 20px; }
@@ -191,6 +176,72 @@ body {
           border-bottom: 1px solid #ccc;
           background: transparent;
           resize: none; }
+        .container .main-content .write-post-container .post-input-container .add-post-links {
+          display: flex;
+          margin-top: 10px; }
+          .container .main-content .write-post-container .post-input-container .add-post-links a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #1876f2;
+            margin-right: 30px;
+            font-size: 13px; }
+            .container .main-content .write-post-container .post-input-container .add-post-links a img {
+              width: 20px;
+              margin-right: 10px; }
+    .container .main-content .user-profile {
+      display: flex;
+      align-items: center; }
+      .container .main-content .user-profile img {
+        width: 45px;
+        border-radius: 50%;
+        margin-right: 10px; }
+      .container .main-content .user-profile .name-text {
+        font-weight: 500;
+        color: #626262; }
+      .container .main-content .user-profile small {
+        font-size: 12px; }
+      .container .main-content .user-profile i {
+        margin-left: 3px; }
+      .container .main-content .user-profile span {
+        font-size: 13px;
+        color: #9a9a9a; }
+    .container .main-content .post-container {
+      width: 100%;
+      background: #fff;
+      border-radius: 6px;
+      padding: 20px;
+      color: #626262;
+      margin: 20px 0; }
+      .container .main-content .post-container .post-text {
+        color: #9a9a9a;
+        margin: 12px 0;
+        font-size: 15px; }
+      .container .main-content .post-container .post-img {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 5px; }
+      .container .main-content .post-container .post-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .container .main-content .post-container .post-row .activity-icons div {
+          display: inline-flex;
+          align-items: center;
+          margin-right: 30px; }
+          .container .main-content .post-container .post-row .activity-icons div img {
+            width: 18px;
+            margin-right: 10px; }
+        .container .main-content .post-container .post-row .post-profile-icon {
+          display: flex;
+          align-items: center; }
+          .container .main-content .post-container .post-row .post-profile-icon img {
+            width: 20px;
+            border-radius: 50%;
+            margin-right: 5px; }
+        .container .main-content .post-container .post-row a {
+          text-decoration: none;
+          color: #9a9a9a; }
   .container .right-sidebar {
     flex-basis: 25%;
     position: sticky;
