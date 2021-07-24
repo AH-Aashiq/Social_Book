@@ -1,4 +1,5 @@
-function  toAll() {
-     console.log("Eid Mubarak");
+let settingsMenu = document.querySelector(".settings-menu");
+
+function settingsMenuToggle() {
+     settingsMenu.classList.toggle("settings-menu-height");
 }
-toAll()

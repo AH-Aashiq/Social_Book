@@ -26,9 +26,24 @@
                     <img src="images/search.png" alt="search">
                     <input type="text" placeholder="Search" />
                </div>
-               <div class="nav-user-icon online">
+
+               <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                     <img src="images/profile-pic.png" alt="profilePic">
                </div>
+
+          </div>
+
+          <!-- NAVIGATION-DROP DOWN MENU  -->
+          <div class="settings-menu">
+               
+               <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="profile-pic">
+                    <div>
+                         <p>Jonson Smith</p>
+                         <a href="">See your Profile</a>
+                    </div>
+               </div>
+
           </div>
      </nav>
      <main>
@@ -102,6 +117,7 @@
                     </div>
 
                     <div class="post-container">
+
                          <div class="post-row">
                               <div class="user-profile">
                                    <img src="images/profile-pic.png" alt="profile-pic">
@@ -115,7 +131,7 @@
 
                          <p class="post-text">Hi Everybody</p>
                          <img src="images/feed-image-1.png" alt="post-img" class="post-img">
-                         
+
                          <div class="post-row">
                               <div class="activity-icons">
                                    <div><img src="images/like-blue.png" alt="like">120</div>
@@ -144,7 +160,7 @@
 
                          <p class="post-text">Hi Everybody</p>
                          <img src="images/feed-image-2.png" alt="post-img" class="post-img">
-                         
+
                          <div class="post-row">
                               <div class="activity-icons">
                                    <div><img src="images/like-blue.png" alt="like">120</div>
@@ -173,7 +189,7 @@
 
                          <p class="post-text">Hi Everybody</p>
                          <img src="images/feed-image-3.png" alt="post-img" class="post-img">
-                         
+
                          <div class="post-row">
                               <div class="activity-icons">
                                    <div><img src="images/like-blue.png" alt="like">120</div>
@@ -203,7 +219,7 @@
 
                          <p class="post-text">Hi Everybody</p>
                          <img src="images/feed-image-4.png" alt="post-img" class="post-img">
-                         
+
                          <div class="post-row">
                               <div class="activity-icons">
                                    <div><img src="images/like-blue.png" alt="like">120</div>
@@ -231,7 +247,7 @@
 
                          <p class="post-text">Hi Everybody</p>
                          <img src="images/feed-image-5.png" alt="post-img" class="post-img">
-                         
+
                          <div class="post-row">
                               <div class="activity-icons">
                                    <div><img src="images/like-blue.png" alt="like">120</div>
@@ -244,8 +260,9 @@
                               </div>
                          </div>
                     </div>
-
+                    <button type="button" class="btn-load-more">Load More</button>
                </div>
+
                <!-------- RIGHT SIDEBAR-------- -->
                <div class="right-sidebar">
                     <div class="sidebar-title">
@@ -309,9 +326,27 @@
                          <p>Falesia Mendela</p>
                     </div>
 
+
+                    <div class="online-list">
+                         <div class="online">
+                              <img src="https://scontent.fdac116-1.fna.fbcdn.net/v/t1.6435-1/p160x160/216564503_338453881148119_4440154006776882834_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=7206a8&_nc_ohc=gqyo8hYBBg0AX-0qbOT&_nc_ht=scontent.fdac116-1.fna&oh=3caa9952819f6f690a62056bc1ad0946&oe=612310D5"
+                                   alt="fatema">
+                         </div>
+                         <p>Fatema Tasnim</p>
+                    </div>
+
+                    <div class="online-list">
+                         <div class="online">
+                              <img src="https://scontent.fdac116-1.fna.fbcdn.net/v/t1.6435-9/119004740_366231904394102_1810643180570202131_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=174925&_nc_ohc=L8Yn_BzTMQAAX85cs8f&_nc_ht=scontent.fdac116-1.fna&oh=aac3eea7c45ba6f4e7369d3fc59e96a0&oe=61226194"
+                                   alt="taseen">
+                         </div>
+                         <p>Nurey Jannat Taseen</p>
+                    </div>
+
                </div>
           </div>
      </main>
 </body>
+<script src="javaScripts/app.js"></script>
 
 </html>

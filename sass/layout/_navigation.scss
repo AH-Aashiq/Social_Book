@@ -54,7 +54,7 @@
                }
           }
           .nav-user-icon{
-               margin-left: 30px;
+               margin-left: 20px;
 
                img {
                     width:40px;
@@ -65,8 +65,26 @@
      }
 }
 
+.settings-menu{
+     position:absolute;
+     width:90%;
+     max-width: 350px;
+     height: 500px;
+     background:#fff;
+     box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
+     border-radius: 4px;
+     overflow: hidden;
+     top: 108%;
+     right:5%;
+     max-height:0;
+     transition: max-height 0.3s;
+}
 
-/*----Global Online Content design----*/
+.settings-menu-height {
+     max-height:450px;
+}
+
+/*----Global Online Class design----*/
 .online{
      position: relative;
 }

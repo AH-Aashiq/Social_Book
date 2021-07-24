@@ -3,13 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-html {
-  font-size: 62.5%; }
-
 body {
   background: #efefef;
-  font-family: sans-serif;
-  font-size: 1.8rem; }
+  font-family: sans-serif; }
 
 .navigation {
   display: flex;
@@ -52,13 +48,30 @@ body {
       .navigation .nav-right .search-box img {
         width: 18px; }
     .navigation .nav-right .nav-user-icon {
-      margin-left: 30px; }
+      margin-left: 20px; }
       .navigation .nav-right .nav-user-icon img {
         width: 40px;
         border-radius: 50%;
         cursor: pointer; }
 
-/*----Global Online Content design----*/
+.settings-menu {
+  position: absolute;
+  width: 90%;
+  max-width: 350px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  top: 108%;
+  right: 5%;
+  max-height: 0;
+  transition: max-height 0.3s; }
+
+.settings-menu-height {
+  max-height: 450px; }
+
+/*----Global Online Class design----*/
 .online {
   position: relative; }
 
@@ -116,8 +129,7 @@ body {
       margin: 25px 0;
       color: #626262; }
   .container .main-content {
-    flex-basis: 47%;
-    height: 100vh; }
+    flex-basis: 47%; }
     .container .main-content .story-gallery {
       display: flex;
       justify-content: space-between;
@@ -189,23 +201,6 @@ body {
             .container .main-content .write-post-container .post-input-container .add-post-links a img {
               width: 20px;
               margin-right: 10px; }
-    .container .main-content .user-profile {
-      display: flex;
-      align-items: center; }
-      .container .main-content .user-profile img {
-        width: 45px;
-        border-radius: 50%;
-        margin-right: 10px; }
-      .container .main-content .user-profile .name-text {
-        font-weight: 500;
-        color: #626262; }
-      .container .main-content .user-profile small {
-        font-size: 12px; }
-      .container .main-content .user-profile i {
-        margin-left: 3px; }
-      .container .main-content .user-profile span {
-        font-size: 13px;
-        color: #9a9a9a; }
     .container .main-content .post-container {
       width: 100%;
       background: #fff;
@@ -263,41 +258,39 @@ body {
         text-decoration: none;
         color: #1876f2;
         font-size: 12px; }
-  .container .event {
-    display: flex;
-    font-size: 14px;
-    margin-bottom: 20px; }
-    .container .event i {
-      margin-right: 3px; }
-    .container .event p {
-      font-size: 12px; }
-    .container .event a {
-      font-size: 12px;
-      text-decoration: none;
-      color: #1876f2; }
-  .container .left-event {
-    border-radius: 10px;
-    height: 65px;
-    width: 65px;
-    margin-right: 15px;
-    padding-top: 10px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-    .container .left-event span {
-      position: absolute;
-      bottom: 0;
-      left: 0;
+    .container .right-sidebar .sidebar-ads {
       width: 100%;
-      background: #1876f2;
-      color: #fff;
-      font-size: 10px;
-      padding: 4px 0; }
-  .container .sidebar-ads {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 4px; }
+      margin-bottom: 20px;
+      border-radius: 4px; }
+    .container .right-sidebar .event {
+      display: flex;
+      font-size: 14px;
+      margin-bottom: 20px; }
+      .container .right-sidebar .event .right-event p {
+        font-size: 12px; }
+      .container .right-sidebar .event .right-event a {
+        font-size: 12px;
+        text-decoration: none;
+        color: #1876f2; }
+      .container .right-sidebar .event .left-event {
+        border-radius: 10px;
+        height: 65px;
+        width: 65px;
+        margin-right: 15px;
+        padding-top: 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .container .right-sidebar .event .left-event span {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: #1876f2;
+          color: #fff;
+          font-size: 10px;
+          padding: 4px 0; }
   .container .online-list {
     display: flex;
     align-items: center;
@@ -312,3 +305,30 @@ body {
       .container .online-list .online::after {
         top: unset;
         bottom: 5px; }
+
+.user-profile {
+  display: flex;
+  align-items: center; }
+  .user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px; }
+  .user-profile .name-text {
+    font-weight: 500;
+    color: #626262; }
+  .user-profile small {
+    font-size: 12px; }
+  .user-profile i {
+    margin-left: 3px; }
+  .user-profile span {
+    font-size: 13px;
+    color: #9a9a9a; }
+
+.btn-load-more {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #9a9a9a;
+  background: transparent;
+  border-radius: 4px; }
