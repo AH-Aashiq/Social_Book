@@ -2,7 +2,7 @@
      display:flex;
      align-items: center;
      justify-content:space-between;
-     background-color: $color-blue-light;
+     background-color: var(--nav-color);
      padding:5px 5%;
      position:sticky;
      top:0;
@@ -37,7 +37,7 @@
                width: 350px;
                border-radius: 20px;
                padding: 0 15px;
-               background:$background-color;
+               background:#efefef;
                display:flex;
                align-items:center;
 
@@ -70,7 +70,7 @@
      width:90%;
      max-width: 350px;
      height: 500px;
-     background:#fff;
+     background:var(--bg-color);
      box-shadow: 0 0 10px rgba(0, 0, 0,0.4);
      border-radius: 4px;
      overflow: hidden;
@@ -78,11 +78,83 @@
      right:5%;
      max-height:0;
      transition: max-height 0.3s;
+
+     hr{
+          border:0;
+          height:1px;
+          background: #9a9a9a;
+          margin:15px 0;
+     }
+
+     .settings-menu-inner{
+          padding:20px;
+
+          .user-profile{
+               a{
+                    font-size:12px;
+                    color:#1876f2;
+                    text-decoration:none;
+               }
+          }
+          .settings-links{
+               display:flex;
+               align-items:center;
+               margin:15px 0;
+
+               .settings-icon{
+                    width:38px;
+                    margin-right:10px;
+                    border-radius: 50%;
+
+               }
+
+               a{
+                    text-decoration: none;
+                    display:flex;
+                    flex:1;
+                    align-items:center;
+                    justify-content:space-between;
+                    color: #6a6a6a;
+
+               }
+               
+          }
+     }
 }
 
-.settings-menu-height {
-     max-height:450px;
+#dark-btn{
+     position:absolute;
+     top:20px;
+     right:20px;
+     background:#ccc;
+     width:45px;
+     border-radius:15px;
+     padding:2px 3px;
+     cursor: pointer;
+     display: flex;
+     transition:padding-left 0.5s, background 0.5s;
+
+     span{
+          width:18px;
+          height:18px;
+          background:#fff;
+          border-radius: 50%;
+          display:inline-block;
+
+     }
+
+     &.dark-btn-on{
+          padding-left:23px;
+          background:#000;
+     }
 }
+
+
+//For Js 
+.settings-menu-height {
+     max-height:400px;
+}
+
 
 /*----Global Online Class design----*/
 .online{

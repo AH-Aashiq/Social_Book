@@ -3,15 +3,26 @@
   padding: 0;
   box-sizing: border-box; }
 
+:root {
+  --body-color:#efefef;
+  --nav-color:#1876f2;
+  --bg-color:#fff; }
+
+.dark-theme {
+  --body-color:#0a0a0a;
+  --nav-color:#000;
+  --bg-color:#000; }
+
 body {
-  background: #efefef;
-  font-family: sans-serif; }
+  background: var(--body-color);
+  font-family: sans-serif;
+  transition: background 0.3s; }
 
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1876f2;
+  background-color: var(--nav-color);
   padding: 5px 5%;
   position: sticky;
   top: 0;
@@ -59,7 +70,7 @@ body {
   width: 90%;
   max-width: 350px;
   height: 500px;
-  background: #fff;
+  background: var(--bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   overflow: hidden;
@@ -67,9 +78,56 @@ body {
   right: 5%;
   max-height: 0;
   transition: max-height 0.3s; }
+  .settings-menu hr {
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0; }
+  .settings-menu .settings-menu-inner {
+    padding: 20px; }
+    .settings-menu .settings-menu-inner .user-profile a {
+      font-size: 12px;
+      color: #1876f2;
+      text-decoration: none; }
+    .settings-menu .settings-menu-inner .settings-links {
+      display: flex;
+      align-items: center;
+      margin: 15px 0; }
+      .settings-menu .settings-menu-inner .settings-links .settings-icon {
+        width: 38px;
+        margin-right: 10px;
+        border-radius: 50%; }
+      .settings-menu .settings-menu-inner .settings-links a {
+        text-decoration: none;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+        color: #6a6a6a; }
+
+#dark-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: flex;
+  transition: padding-left 0.5s, background 0.5s; }
+  #dark-btn span {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block; }
+  #dark-btn.dark-btn-on {
+    padding-left: 23px;
+    background: #000; }
 
 .settings-menu-height {
-  max-height: 450px; }
+  max-height: 400px; }
 
 /*----Global Online Class design----*/
 .online {
@@ -174,7 +232,7 @@ body {
           font-weight: 500; }
     .container .main-content .write-post-container {
       width: 100%;
-      background: #fff;
+      background: var(--bg-color);
       border-radius: 6px;
       padding: 20px;
       color: #626262; }
@@ -191,19 +249,18 @@ body {
         .container .main-content .write-post-container .post-input-container .add-post-links {
           display: flex;
           margin-top: 10px; }
-          .container .main-content .write-post-container .post-input-container .add-post-links a {
+          .container .main-content .write-post-container .post-input-container .add-post-links .link {
             text-decoration: none;
             display: flex;
             align-items: center;
-            color: #1876f2;
             margin-right: 30px;
             font-size: 13px; }
-            .container .main-content .write-post-container .post-input-container .add-post-links a img {
+            .container .main-content .write-post-container .post-input-container .add-post-links .link img {
               width: 20px;
               margin-right: 10px; }
     .container .main-content .post-container {
       width: 100%;
-      background: #fff;
+      background: var(--bg-color);
       border-radius: 6px;
       padding: 20px;
       color: #626262;
@@ -242,7 +299,7 @@ body {
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background: #fff;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: #626262; }
@@ -331,4 +388,10 @@ body {
   padding: 5px 10px;
   border: 1px solid #9a9a9a;
   background: transparent;
-  border-radius: 4px; }
+  border-radius: 4px;
+  color: #626262; }
+
+.footer p {
+  text-align: center;
+  color: #6a6a6a;
+  padding: 10px; }

@@ -18,7 +18,7 @@
                     display: flex;
                     align-items:center;
                     margin-bottom:30px;
-                    color:$color-grey;
+                    color:#626262;
                     width:fit-content;
 
                     img{
@@ -26,7 +26,7 @@
                          margin-right:15px;
                     }
                     &:last-child{
-                         color:$color-blue-light;
+                         color:#1876f2;
                     }
                }
           }
@@ -38,7 +38,7 @@
                     display: flex;
                     align-items:center;
                     margin-bottom:30px;
-                    color:$color-grey;
+                    color:#626262;
                     width:fit-content;
                     img{
                          width:40px;
@@ -47,13 +47,13 @@
                     }
 
                     &:last-child{
-                         color:$color-blue-light;
+                         color: #1876f2;
                          font-size:15px;
                     }
                }
                p{
                     margin:25px 0;
-                    color:$color-grey;
+                    color: #626262;
                }
           }
      }
@@ -105,7 +105,7 @@
                          border-radius: 50%;
                          top:10px;
                          left:10px;
-                         border: 5px solid $color-blue-light;
+                         border: 5px solid #1876f2;
                     }
                     p{
                          position: absolute;
@@ -121,32 +121,32 @@
      
           .write-post-container {
                width:100%;
-               background:#fff;
+               background:var(--bg-color);
                border-radius: 6px;
                padding:20px;
-               color:$color-grey;
+               color:#626262;
 
                .post-input-container{
                     padding-left:55px;
                     padding-top:20px;
-
                     textarea{
                          width:100%;
                          border:0;
                          outline:0;
                          border-bottom:1px solid #ccc;
                          background:transparent;
-                         resize:none; 
+                         resize:none;   
                     }
+
                     .add-post-links{
                          display:flex;
                          margin-top:10px;
 
-                         a{
+                         .link{
                               text-decoration: none;
                               display: flex;
                               align-items:center;
-                              color:$color-blue-light;
+                              // color:#1876f2;
                               margin-right:30px;
                               font-size: 13px;
 
@@ -161,10 +161,10 @@
           }
           .post-container {
                width:100%;
-               background: #fff;
+               background:var(--bg-color);
                border-radius:6px;
                padding:20px;
-               color: $color-grey;
+               color: #626262;
                margin:20px 0;
 
                .post-text{
@@ -220,10 +220,10 @@
           position:sticky;
           top:70px;
           align-self: flex-start;
-          background:#fff;
+          background:var(--bg-color);
           padding:20px;
           border-radius: 4px;
-          color:$color-grey;
+          color:#626262;
 
           .sidebar-title{
                display: flex;
@@ -238,7 +238,7 @@
                }
                a{
                     text-decoration: none;
-                    color:$color-blue-light;
+                    color:#1876f2;
                     font-size:12px;
                }
           }
@@ -261,7 +261,7 @@
                     a{
                          font-size:12px;
                          text-decoration:none;
-                         color:$color-blue-light;
+                         color:#1876f2;
           
                     }
                }
@@ -282,7 +282,7 @@
                          bottom:0;
                          left:0;
                          width:100%;
-                         background:$color-blue-light;
+                         background:#1876f2;
                          color:#fff;
                          font-size:10px;
                          padding: 4px 0;
@@ -328,7 +328,7 @@
      }
      .name-text{
           font-weight: 500;
-          color:$color-grey;
+          color:#626262;
 
      }
      small{
@@ -353,4 +353,5 @@
      border: 1px solid #9a9a9a;
      background:transparent;
      border-radius: 4px;
+     color: #626262;
 }
